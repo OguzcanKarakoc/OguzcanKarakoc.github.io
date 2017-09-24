@@ -2,10 +2,32 @@
 Fonts
  */
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Wendy+One');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Average');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 /**
 Global styling
  */
+
+* {
+    font-family : 'Helvetica', cursive !important;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link{
+    font-family : "Josefin Sans", cursive !Important;
+}
+h1, h2 {
+    font-size: 3rem!important;
+}
+
 .fullwidth {
     width : 100%;
 }
@@ -225,7 +247,7 @@ Homepage styling
 
 .about-text {
     color          : #FFFFFF;
-    font-family    : "lato Light";
+    font-family    : "lato";
     text-align     : center;
     vertical-align : middle;
     display        : table-cell;
@@ -315,13 +337,8 @@ Projects
     margin-bottom    : 50px;
 }
 
-#projects > .filter > div > a > div:hover {
-    position : relative;
-    top      : 50px;
-}
-
-#projects > .filter > div > a {
-    text-decoration : none;
+#projects > .filter > div > div:hover {
+    background-color : #3C3C3C;
 }
 
 .project_item {
@@ -416,6 +433,10 @@ Projects
     position : relative;
 }
 
+@media screen {
+    /*TODO mobile stuff*/
+}
+
 .project_img:hover .project_description {
     opacity   : 1;
     animation : fadein 1s;
@@ -499,6 +520,7 @@ section#contact > div > div > div > div {
 
 section#contact > div > div > div {
     height : 25vh;
+    max-height: 200px;
 }
 
 .first-box {
@@ -532,7 +554,6 @@ Contact form
 }
 
 #contact_form {
-    padding-top           : 60px;
     width                 : 100%;
     width                 : 100vw;
     height                : 550px;
@@ -543,6 +564,14 @@ Contact form
     background-size       : 100% 100%;
     color                 : #FFFFFF;
     background-color      : #000000;
+}
+
+#contact_form > div {
+    padding-top : 60px;
+    background  : rgba(0, 0, 0, 0.5); /*#2C4797*/
+    overflow    : hidden;
+    height      : 100%;
+    z-index     : 2;
 }
 
 .contact-section {
