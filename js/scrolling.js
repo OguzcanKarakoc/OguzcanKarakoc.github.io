@@ -1,3 +1,8 @@
+$(window).load(function(){
+    $('.loader').fadeOut();
+});
+
+
 // Returns true if the specified element has been scrolled into the viewport.
 function isElementInViewport(elem) {
     var $elem = elem;
@@ -109,5 +114,4 @@ $(".filter > div > div").on("click", function () {
         $(this).addClass('active_filter');
     }
 });
-
 

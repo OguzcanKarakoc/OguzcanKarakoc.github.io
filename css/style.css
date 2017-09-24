@@ -26,6 +26,33 @@ html {
     overflow-x : hidden;
 }
 
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow : inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius      : 10px;
+    background-color   : #F5F5F5;
+}
+
+html::-webkit-scrollbar {
+    width            : 12px;
+    background-color : #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius      : 10px;
+    -webkit-box-shadow : inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color   : #0B0B0B;
+}
+
+.loader {
+    position   : fixed;
+    left       : 0px;
+    top        : 0px;
+    width      : 100%;
+    height     : 100%;
+    z-index    : 9999;
+    background : url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249, 249, 249);
+}
+
 /**
 Heading animation
 */
