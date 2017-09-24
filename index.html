@@ -9,6 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/colorbox.css" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
@@ -86,8 +89,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <!--<a class="navbar-brand" href="#">Oguzcan Karakoc</a>-->
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: auto; margin-right: auto;">
+            <a class="navbar-brand" href="#">Oguzcan Karakoc</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
@@ -101,10 +104,6 @@
                     <a class="nav-link" href="#contact_form">Contact</a>
                 </li>
             </ul>
-            <!--<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>-->
         </div>
     </nav>
 </section>
@@ -245,45 +244,49 @@
 <section id="skills-pgr">
     <h2>Skills</h2>
     <hr>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <span>HTML/CSS</span>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <span>HTML/CSS</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <span>PHP</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <span>JS</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <span>Wordpress</span>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-            <span>PHP</span>
-        </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            <span>JS</span>
-        </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <span>Wordpress</span>
-        </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-            <span>Joomla</span>
-        </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
-            <span>Photoshop/ Illustrator</span>
-        </div>
-    </div>
-    <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-            <span>SQL</span>
-        </div>
-    </div>
+        <div class="col-xs-6 col-md-6">
 
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <span>Joomla</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                    <span>Photoshop/ Illustrator</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-
 <section id="contact_form">
     <div class="section-content">
         <h1 class="section-header">
@@ -407,6 +410,10 @@
     </div>
 </div>
 
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+<!-- link to scripts here -->
+<script src="js/main.js"></script>
 <script src="js/scrolling.js"></script>
 <script src="js/progresbar.js"></script>
 

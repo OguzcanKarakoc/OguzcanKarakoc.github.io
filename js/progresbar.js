@@ -6,3 +6,6 @@ function progress_bar() {
     });
 }
 
+$(window).load(function(){
+    $('.loader').fadeOut();
+});
