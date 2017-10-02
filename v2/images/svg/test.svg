@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.86 338.5">
+    <defs>
+        <style>.cls-1{font-size:250px;font-family:TheWoodlands-Regular, The
+            Woodlands;}.cls-1,.cls-2,.cls-3,.cls-4{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-2{stroke-width:31px;}.cls-3{stroke-width:20px;}.cls-4{stroke-width:23px;}
+        </style>
+
+        <mask id="mask_test">
+            <g id="Layer_2-2" data-name="Layer 2">
+                <line class="cls-2" x1="58.98" y1="76.53" x2="14.98" y2="242.53"/>
+                <polyline class="cls-3" points="42.48 171.03 90.48 129.03 109.98 76.53 115.98 38.53"/>
+                <polyline class="cls-4" points="48.48 176.03 58.48 191.03 59.48 213.03 73.48 238.03 104.48 253.03"/>
+            </g>
+        </mask>
+    </defs>
+    <title>test</title>
+    <g id="Layer_2" data-name="Layer 2" mask="url(#mask_test)">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <text class="cls-1" transform="translate(11.45 213)">K</text>
+        </g>
+    </g>
+</svg>
+

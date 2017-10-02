@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.86 337.5">
+    <defs>
+        <style>.cls-1{font-size:250px;font-family:TheWoodlands-Regular, The
+            Woodlands;}.cls-2,.cls-3,.cls-4{fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-2{stroke-width:31px;}.cls-3{stroke-width:20px;}.cls-4{stroke-width:23px;}
+
+            .test {
+                stroke-dasharray: 1000;
+                stroke-dashoffset:0;
+                animation: dash 10s linear forwards;
+            }
+
+            @-webkit-keyframes O {
+                from {
+                    stroke-dashoffset: 1000;
+                } to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            @-webkit-keyframes O {
+
+            }
+        </style>
+        <mask id="mask_test">
+            <g id="Layer_2-2" data-name="Layer 2">
+                <line class="test cls-2" x1="58.98" y1="76.03" x2="14.98" y2="242.03"/>
+                <polyline class="test cls-3" points="42.48 170.53 90.48 128.53 109.98 76.03 115.98 38.03"/>
+                <polyline class="test cls-4" points="48.48 175.53 58.48 190.53 59.48 212.53 73.48 237.53 104.48 252.53"/>
+            </g>
+        </mask>
+
+    </defs>
+    <title>test_1</title>
+    <g id="Layer_2" data-name="Layer 2" mask="url(#mask_test)">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <text class="cls-1" transform="translate(11.45 212.5)">K</text>
+        </g>
+    </g>
+</svg>
