@@ -10,7 +10,6 @@
 
 body {
     margin : 0;
-    height : 200vh;
 }
 
 .table {
@@ -29,26 +28,22 @@ nav a {
     font-size   : 175% !important;
 }
 
-.navbar-fixed {
-    position : fixed;
-    z-index  : 99999;
-}
-
 /*Home*/
 
 #home > div {
     width                 : 100%;
-    height                : 900px;
+    min-height            : 50vh;;
     background-image      : url("../images/stock/rotterdam_city.jpg");
     background-repeat     : no-repeat;
     background-size       : cover;
     background-attachment : fixed;
+    display               : flex;
+    align-items           : center;
+
 }
 
 #home > div > div {
-    height           : 300px;
-    position         : relative;
-    top              : 300px;
+    height           : auto;
     width            : 100%;
     text-align       : center;
     background-color : rgba(255, 255, 255, 0.3);
@@ -65,12 +60,12 @@ nav a {
 }
 
 .diamond {
-    position    : relative;
-    left        : 100%;
-    margin-left : -150px;
-    transform   : rotate(45deg) translateY(-25px) translateX(-25px);
-    z-index     : 0;
-    top         : 10%;
+    position  : relative;
+    /*left        : 100%;
+    margin-left : -150px;*/
+    transform : rotate(45deg) translateY(-25px) translateX(-25px);
+    z-index   : 0;
+    top       : 10%;
 }
 
 .diamond .dia {
@@ -84,11 +79,22 @@ nav a {
     height : auto;
 }
 
-#about > div > .heading {
+.heading {
+    font-family : 'Zapfino Forte LT Pro' !important;
+    text-align  : center;
+    color       : #FFFFFF;
+    font-size   : 800%;
+}
 
+#about > div > .heading {
     text-align       : center;
     font-family      : 'Zapfino Forte LT Pro' !important;
-    background-color : #1C1C1C
+    background-color : #1C1C1C;
+    min-height       : 40vh;
+}
+
+#about > div > .img {
+    background-color : #3F51B5;
 }
 
 #about > div > .heading > h2 {
@@ -96,16 +102,248 @@ nav a {
     top         : 50%;
     color       : #FFFFFF;
     font-family : 'Zapfino Forte LT Pro' !important;
-    font-size   : 200px;
+    font-size   : 100%;
 }
 
 #about .padding {
-    padding: 9%;
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    padding          : 9%;
+    font-weight      : 400;
+    font-style       : normal;
+    font-family      : 'Montserrat', sans-serif;
+    font-size        : 1em;
+    background-color : #FFFFFF;
 }
 
+/*Projects*/
 
+/*#projects .heading {
+    position  : fixed;
+    top       : 50%;
+    left      : 5vw;
+    font-size : 40vw;
+    z-index   : -1;
+    color     : #AFAFAF;
+}*/
 
+#projects .heading {
+    width      : 100%;
+    text-align : center;
+}
+
+#projects .filter {
+    width : 100%;
+}
+
+#projects > div:first-of-type {
+    background-color : #3F51B5;
+}
+
+.tags {
+    list-style : none;
+    margin     : 0;
+    overflow   : hidden;
+    padding    : 0;
+}
+
+.tags li {
+    float : left;
+}
+
+.tag {
+    background         : #EEEEEE;
+    color              : #999999;
+    display            : inline-block;
+    height             : 40px;
+    line-height        : 40px;
+    padding            : 0 45px 0 45px;
+    position           : relative;
+    margin             : 0 10px 10px 0;
+    text-decoration    : none;
+    -webkit-transition : color 0.2s;
+}
+
+.tag::before {
+    background    : #3F51B5;
+    border-radius : 10px;
+    box-shadow    : inset 0 1px rgba(0, 0, 0, 0.25);
+    content       : '';
+    height        : 6px;
+    left          : 10px;
+    position      : absolute;
+    width         : 6px;
+    top           : 46%;
+}
+
+.tag::after {
+    background    : #3F51B5;
+    border-bottom : 20px solid transparent;
+    border-left   : 10px solid #EEEEEE;
+    border-top    : 20px solid transparent;
+    content       : '';
+    position      : absolute;
+    right         : 0;
+    top           : 0;
+}
+
+.tag:hover {
+    background-color : #1C1C1C;
+    color            : #FFFFFF;
+}
+
+.tag:hover::after {
+    border-left-color : #1C1C1C;
+}
+
+.background-bar > div {
+    background-color : #3F51B5;
+    height           : 100vh;
+    position         : fixed;
+    left             : 50%;
+    transform        : translate(-50%, 0);
+    top              : 0;
+    z-index          : -1;
+}
+
+.demo-card-square.mdl-card {
+    width  : 100%;
+    height : 320px;
+}
+
+.demo-card-square > .mdl-card__title {
+    color                 : #FFFFFF;
+    background            : linear-gradient(0deg, rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0.5)), url('http://www.hilltopoutdoorcentre.co.uk/bwa-assets/imgLibrary/images/Blog/coming-soon_0.jpg') no-repeat;
+    background-size       : cover;
+    background-position-y : center;
+    -webkit-filter        : grayscale(100%);
+    filter                : grayscale(100%);
+    transition            : all 0.5s;
+}
+
+.demo-card-square > .mdl-card__title:hover {
+    -webkit-filter : grayscale(0%);
+    filter         : grayscale(0%);
+    transition     : all 0.5s;
+}
+
+/*Services*/
+
+#services > div:first-of-type {
+    background-color : #3F51B5;
+}
+
+#services .heading {
+    background-color : #3F51B5;
+    width            : 100%;
+
+}
+
+#services .services > div {
+    min-height : 50vh;
+}
+
+#services .services > div .heading {
+
+    color            : #3F51B5;
+    font-family      : 'Zapfino Forte LT Pro' !important;
+    font-size        : 100px;
+    background-color : transparent;
+    line-height      : 100%;
+}
+
+#services .design > div,
+#services .development > div {
+    background-color : rgba(255, 255, 255, 0.42);
+    position         : relative;
+    top              : 34%;
+    height           : 20%;
+}
+
+#services .design {
+    background-image      : url("../images/stock/StockSnap_2H4NZ2HAN3.jpg");
+    background-size       : cover;
+    background-position   : center;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    -webkit-filter        : grayscale(100%);
+    filter                : grayscale(100%);
+    transition            : all 0.5s;
+}
+
+#services .design:hover {
+    -webkit-filter : grayscale(0%);
+    filter         : grayscale(0%);
+    transition     : all 0.5s;
+}
+
+#services .development {
+    background-image      : url("../images/stock/StockSnap_402S0PDBGT.jpg");
+    background-size       : cover;
+    background-position   : center;
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    -webkit-filter        : grayscale(100%);
+    filter                : grayscale(100%);
+    transition            : all 0.5s;
+}
+
+#services .development:hover {
+    -webkit-filter : grayscale(0%);
+    filter         : grayscale(0%);
+    transition     : all 0.5s;
+}
+
+/*Contact*/
+
+#contact .heading {
+    line-height : 100%;
+
+}
+
+.button {
+    display          : inline-block;
+    background-color : #3F51B5;
+    border           : none;
+    color            : #FFFFFF;
+    text-align       : center;
+    font-size        : 28px;
+    padding          : 20px;
+    width            : 100%;
+    transition       : all 0.5s;
+    cursor           : pointer;
+}
+
+.button:hover {
+    background-color : #142DB5;
+
+}
+
+.button span {
+    cursor     : pointer;
+    display    : inline-block;
+    position   : relative;
+    transition : 0.5s;
+}
+
+.button span:after {
+    content    : '\00bb';
+    position   : absolute;
+    opacity    : 0;
+    top        : 0;
+    right      : -20px;
+    transition : 0.5s;
+}
+
+.button:hover span {
+    padding-right : 25px;
+}
+
+.button:hover span:after {
+    opacity : 1;
+    right   : 0;
+}
+
+#contact {
+    background : #333333;
+    width      : 100%;
+    text-align : center;
+}

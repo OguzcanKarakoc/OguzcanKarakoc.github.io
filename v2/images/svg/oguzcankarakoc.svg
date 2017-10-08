@@ -18,79 +18,79 @@
 #mask_O {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_O 5s linear forwards;
+    animation         : mask_O 7s linear forwards;
 }
 
 #mask_g {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_g 5s linear forwards;
+    animation         : mask_g 7s linear forwards;
 }
 
 #mask_u {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_u 5s linear forwards;
+    animation         : mask_u 7s linear forwards;
 }
 
 #mask_z {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_z 5s linear forwards;
+    animation         : mask_z 7s linear forwards;
 }
 
 #mask_c {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_c 5s linear forwards;
+    animation         : mask_c 7s linear forwards;
 }
 
 #mask_a {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_a 5s linear forwards;
+    animation         : mask_a 7s linear forwards;
 }
 
 #mask_n {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_n 5s linear forwards;
+    animation         : mask_n 7s linear forwards;
 }
 
 #mask_K_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_K_2 5s linear forwards;
+    animation         : mask_K_2 7s linear forwards;
 }
 #mask_a_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_a_2 5s linear forwards;
+    animation         : mask_a_2 7s linear forwards;
 }
 #mask_r_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_r_2 5s linear forwards;
+    animation         : mask_r_2 7s linear forwards;
 }
 #mask_a_3 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_a_3 5s linear forwards;
+    animation         : mask_a_3 7s linear forwards;
 }
 #mask_k_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_k_2 5s linear forwards;
+    animation         : mask_k_2 7s linear forwards;
 }
 #mask_o_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_o_2 5s linear forwards;
+    animation         : mask_o_2 7s linear forwards;
 }
 #mask_c_2 {
     stroke-dasharray  : 1000;
     stroke-dashoffset : 0;
-    animation         : mask_c_2 5s linear forwards;
+    animation         : mask_c_2 7s linear forwards;
 }
 
 @-webkit-keyframes mask_O {
