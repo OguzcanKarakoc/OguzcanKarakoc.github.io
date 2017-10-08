@@ -263,7 +263,6 @@ nav a {
     background-size       : cover;
     background-position   : center;
     background-repeat     : no-repeat;
-    background-attachment : fixed;
     -webkit-filter        : grayscale(100%);
     filter                : grayscale(100%);
     transition            : all 0.5s;
@@ -280,7 +279,6 @@ nav a {
     background-size       : cover;
     background-position   : center;
     background-repeat     : no-repeat;
-    background-attachment : fixed;
     -webkit-filter        : grayscale(100%);
     filter                : grayscale(100%);
     transition            : all 0.5s;

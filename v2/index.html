@@ -142,10 +142,12 @@
                 </div>
             </section>
 
-            <div class="mdl-grid  mdl-grid--no-spacing background-bar">
-                <div class="mdl-cell mdl-cell--2-col">
+<!--
+            <div class="mdl-grid  mdl-grid&#45;&#45;no-spacing background-bar">
+                <div class="mdl-cell mdl-cell&#45;&#45;2-col">
                 </div>
             </div>
+-->
 
             <!--3, 4, 6, 8, or 16-->
 
@@ -301,28 +303,24 @@
 </div>
 
 
-<script>
+<!--<script>
     $(document).ready(function () {
-        /*$('a[href^="#"]').on('click', function (e) {
+        $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
             var target    = this.hash;
             var $target   = $(target);
             var $position = $target.offset().top;
 
-            $('.page-content , .mdl-layout__content').stop().animate({
+            console.log($position);
+
+            $('.page-content, .mdl-layout__content').stop().animate({
                 'scrollTop': $position
-            }, 900, 'swing', function () {
+            }, 1000, 'swing', function () {
                 window.location.hash = target;
             });
-        });*/
-
-        $('a[href^="#"]').on('click', function (e) {
-            $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top
-            }, 800)
         });
     });
-</script>
+</script>-->
 </body>
 </html>
