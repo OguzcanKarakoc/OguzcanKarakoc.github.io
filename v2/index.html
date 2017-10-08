@@ -61,7 +61,7 @@
                     </div>
                     <div class="img mdl-cell mdl-cell--2-col mdl-cell--12-col-phone">
                         <!-- add content here -->
-                        <img src="images/private/imgonline-com-ua-shape-ZKKVhJDlZ8Ke.png" style="width: 100%;"/>
+                        <img src="images/private/imgonline-com-ua-shape-ZKKVhJDlZ8Ke.png" style="width: 100%;" />
                     </div>
                     <div class="padding mdl-cell mdl-cell--5-col mdl-cell--12-col-phone">
                         <p>
@@ -303,7 +303,7 @@
 
 <script>
     $(document).ready(function () {
-        $('a[href^="#"]').on('click', function (e) {
+        /*$('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
             var target    = this.hash;
@@ -315,6 +315,12 @@
             }, 900, 'swing', function () {
                 window.location.hash = target;
             });
+        });*/
+
+        $('a[href^="#"]').on('click', function (e) {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 800)
         });
     });
 </script>
