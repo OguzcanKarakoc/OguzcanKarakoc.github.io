@@ -225,6 +225,10 @@ nav a {
     transition     : all 0.5s;
 }
 
+#projects > div {
+    padding: 0 9%;
+}
+
 /*Services*/
 
 #services > div:first-of-type {
