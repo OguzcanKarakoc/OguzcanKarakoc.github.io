@@ -42,6 +42,51 @@
             <a class="mdl-navigation__link" href="#contact">Contact</a>
         </nav>
     </div>
+    <style>
+
+        /* Style the tab */
+        div.tab {
+            overflow         : hidden;
+            border           : 1px solid #1C1C1C;
+            background-color : #1C1C1C;
+            color            : #FFFFFF;
+        }
+
+        /* Style the buttons inside the tab */
+        div.tab button {
+            color            : #FFFFFF;
+            background-color : inherit;
+            float            : left;
+            border           : none;
+            outline          : none;
+            cursor           : pointer;
+            padding          : 14px 16px;
+            transition       : 0.3s;
+            font-size        : 17px;
+            text-align       : center;
+            width            : 50%;
+        }
+
+        /* Change background color of buttons on hover */
+        div.tab button:hover {
+            background-color : #3F51B5;
+            color            : #FFFFFF;
+            transition       : all 0.5s;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab button.active {
+            background-color : #3F51B5;
+            color            : #FFFFFF;
+            transition       : all 0.5s;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display    : none;
+            border-top : none;
+        }
+    </style>
 
     <main class="mdl-layout__content">
         <div class="page-content">
@@ -55,68 +100,224 @@
                 </div>
             </section>
 
-            <section id="about">
-                <div class=" mdl-grid mdl-grid--no-spacing">
-                    <div class="page-content">
-                        <div class="typewriter">
-                            <h1>So who am I?</h1>
-                        </div>
-                        <hr>
-                        <h2 class="about-heading">About</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'projects-tab')" id="defaultOpen">Projects</button>
+                <button class="tablinks" onclick="openCity(event, 'about-tab')">About</button>
+            </div>
+            <div id="about-tab" class="tabcontent">
+                <section id="about">
+                    <div class=" mdl-grid mdl-grid--no-spacing">
+                        <div class="page-content">
+                            <div class="typewriter">
+                                <h1>So who am I?</h1>
+                            </div>
+                            <hr>
+                            <h2 class="about-heading">About</h2>
 
-                        <p class="padding">
-                            Detailed: Employee who independently completes all its tasks and keeps a good overview of
-                            all
-                            adjustments that has to be done. The writing down of other possibilities for different
-                            problems
-                            is a standard. I work oriented and keep everyone informed when making changes and my skills
-                            /
-                            properties are among others to learn and adapt to new changes in society and online.
-                        </p>
-                        <p class="padding">
-                            Team-oriented worker with a successful mind-set and more than 2-3 years experience spanning
-                            design, Web development, Web design and technologies.
-                        </p>
-                        <h3 class="about-heading">
-                            Heading2
-                        </h3>
-                        <p class="padding">
-                            Detailed: Employee who independently completes all its tasks and keeps a good overview of
-                            all
-                            adjustments that has to be done. The writing down of other possibilities for different
-                            problems
-                            is a standard. I work oriented and keep everyone informed when making changes and my skills
-                            /
-                            properties are among others to learn and adapt to new changes in society and online.
-                        </p>
-                        <p class="padding">
-                            Team-oriented worker with a successful mind-set and more than 2-3 years experience spanning
-                            design, Web development, Web design and technologies.
-                        </p>
-                        <p class="padding">
-                            Detailed: Employee who independently completes all its tasks and keeps a good overview of
-                            all
-                            adjustments that has to be done. The writing down of other possibilities for different
-                            problems
-                            is a standard. I work oriented and keep everyone informed when making changes and my skills
-                            /
-                            properties are among others to learn and adapt to new changes in society and online.
-                        </p>
-                        <h3 class="about-heading">
-                            Heading 3 lurum ipsum, making this heading longer then other headings
-                        </h3>
-                        <p class="padding">
-                            Detailed: Employee who independently completes all its tasks and keeps a good overview of
-                            all
-                            adjustments that has to be done. The writing down of other possibilities for different
-                            problems
-                            is a standard. I work oriented and keep everyone informed when making changes and my skills
-                            /
-                            properties are among others to learn and adapt to new changes in society and online.
-                        </p>
+                            <p class="padding">
+                                Detailed: Employee who independently completes all its tasks and keeps a good
+                                overview of
+                                all
+                                adjustments that has to be done. The writing down of other possibilities for
+                                different
+                                problems
+                                is a standard. I work oriented and keep everyone informed when making changes and my
+                                skills
+                                /
+                                properties are among others to learn and adapt to new changes in society and online.
+                            </p>
+                            <p class="padding">
+                                Team-oriented worker with a successful mind-set and more than 2-3 years experience
+                                spanning
+                                design, Web development, Web design and technologies.
+                            </p>
+                            <h3 class="about-heading">
+                                Heading2
+                            </h3>
+                            <p class="padding">
+                                Detailed: Employee who independently completes all its tasks and keeps a good
+                                overview of
+                                all
+                                adjustments that has to be done. The writing down of other possibilities for
+                                different
+                                problems
+                                is a standard. I work oriented and keep everyone informed when making changes and my
+                                skills
+                                /
+                                properties are among others to learn and adapt to new changes in society and online.
+                            </p>
+                            <p class="padding">
+                                Team-oriented worker with a successful mind-set and more than 2-3 years experience
+                                spanning
+                                design, Web development, Web design and technologies.
+                            </p>
+                            <p class="padding">
+                                Detailed: Employee who independently completes all its tasks and keeps a good
+                                overview of
+                                all
+                                adjustments that has to be done. The writing down of other possibilities for
+                                different
+                                problems
+                                is a standard. I work oriented and keep everyone informed when making changes and my
+                                skills
+                                /
+                                properties are among others to learn and adapt to new changes in society and online.
+                            </p>
+                            <h3 class="about-heading">
+                                Heading 3 lurum ipsum, making this heading longer then other headings
+                            </h3>
+                            <p class="padding">
+                                Detailed: Employee who independently completes all its tasks and keeps a good
+                                overview of
+                                all
+                                adjustments that has to be done. The writing down of other possibilities for
+                                different
+                                problems
+                                is a standard. I work oriented and keep everyone informed when making changes and my
+                                skills
+                                /
+                                properties are among others to learn and adapt to new changes in society and online.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+
+            <div id="projects-tab" class="tabcontent">
+                <section id="projects">
+                    <div class="mdl-grid mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <div class="mdl-grid">
+                                <h2 class="heading">Projects</h2>
+                            </div>
+                            <div class="mdl-grid">
+                                <!--<div class="mdl-cell">
+                                    <ul class="tags">
+                                        <li><a href="#" class="tag">HTML</a></li>
+                                        <li><a href="#" class="tag">CSS</a></li>
+                                        <li><a href="#" class="tag">JavaScript</a></li>
+                                    </ul>
+                                </div>-->
+                                <div class="mdl-cell mdl-cell--12-col">
+                                    <span class="categories">Categories: </span>
+                                    <ul class="tags2">
+                                        <li><a href="#" class="tag2">HTML</a></li>
+                                        <li><a href="#" class="tag2">CSS</a></li>
+                                        <li><a href="#" class="tag2">JavaScript</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Project name</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Update</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Update</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Project name</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Update</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <!-- Square card -->
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Update</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aenan convallis.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        More information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
 
             <!--<section id="services">
                 <div class="mdl-grid mdl-shadow&#45;&#45;4dp">
@@ -148,140 +349,7 @@
             -->
 
             <!--3, 4, 6, 8, or 16-->
-
-            <section id="projects">
-                <div class="mdl-grid mdl-shadow--4dp">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <div class="mdl-grid">
-                            <h2 class="heading">Projects</h2>
-                        </div>
-                        <div class="mdl-grid">
-                            <!--<div class="mdl-cell">
-                                <ul class="tags">
-                                    <li><a href="#" class="tag">HTML</a></li>
-                                    <li><a href="#" class="tag">CSS</a></li>
-                                    <li><a href="#" class="tag">JavaScript</a></li>
-                                </ul>
-                            </div>-->
-                            <div class="mdl-cell mdl-cell--12-col">
-                                <span class="categories">Categories: </span>
-                                <ul class="tags2">
-                                    <li><a href="#" class="tag2">HTML</a></li>
-                                    <li><a href="#" class="tag2">CSS</a></li>
-                                    <li><a href="#" class="tag2">JavaScript</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Project name</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Update</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Update</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Project name</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Update</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Square card -->
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <h2 class="mdl-card__title-text">Update</h2>
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    More information
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            
             <section id="contact">
                 <div class="container-1">
                     <div class="btn btn-one">
@@ -308,25 +376,23 @@
     </main>
 </div>
 
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 
-<!--<script>
-    $(document).ready(function () {
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-
-            var target    = this.hash;
-            var $target   = $(target);
-            var $position = $target.offset().top;
-
-            console.log($position);
-
-            $('.page-content, .mdl-layout__content').stop().animate({
-                'scrollTop': $position
-            }, 1000, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-    });
-</script>-->
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>
